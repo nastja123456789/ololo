@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_location">
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="space.yakupov.partyapp10.ui.list.ListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_list">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="fragment_list_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="space.yakupov.partyapp10.ui.location.LocationFragment"
+        android:label="@string/title_location"
+        tools:layout="@layout/fragment_location" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="space.yakupov.partyapp10.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings"
+        >
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="42dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:srcCompat="@android:drawable/ic_popup_reminder" />
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="40dp"
+            android:src="@android:drawable/ic_dialog_email"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="parent" />
+    </fragment>
+</navigation>
