@@ -18,7 +18,7 @@
         android:layout_height="26dp"
         android:layout_marginTop="16dp"
         app:layout_constraintVertical_chainStyle="packed"
-        android:maxLenis="1"
+       
         android:ellipsize="end"
         app:layout_constraintBottom_toTopOf="@id/movie_item_tv_description"
         app:layout_constraintStart_toEndOf="@id/movie_item_poster"
@@ -31,7 +31,6 @@
         android:layout_height="42dp"
         android:layout_marginTop="32dp"
         android:ellipsize="end"
-        android:maxLenis="2"
         app:layout_constraintBottom_toBottomOf="@id/movie_item_poster"
         app:layout_constraintStart_toEndOf="@id/movie_item_poster"
         app:layout_constraintTop_toTopOf="@id/movie_item_tv_name"

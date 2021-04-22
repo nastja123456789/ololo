@@ -11,7 +11,7 @@
         android:label="@string/title_list"
         tools:layout="@layout/fragment_list">
         <androidx.recyclerview.widget.RecyclerView
-            android:id="fragment_list_tv"
+            android:id="@+id/fragment_list_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="50dp"
